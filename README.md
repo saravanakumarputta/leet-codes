@@ -24,3 +24,28 @@ const twoSum = function(nums, target) {
     }
 };
 ```
+
+## Palindrome number or not
+
+### Example:
+`
+Input: x = 121
+Output: true
+`
+
+### Solution
+
+```javascript
+const isPalindrome = function(x) {
+    const charArray = x.toString().split('');    
+    let result = true;
+    for(let i=0; i< charArray.length/2; i++){
+        if(charArray[i] !== charArray[charArray.length-1-i]){
+            result= false;
+            break;
+        }
+    }
+    return result;
+};
+```
+
