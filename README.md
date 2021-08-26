@@ -49,3 +49,21 @@ const isPalindrome = function(x) {
 };
 ```
 
+## length of last word in a given string
+
+### Example:
+`
+Input: s = "   fly me   to   the moon  "
+Output: 4
+Explanation: The last word is "moon" with length 4.
+`
+
+### Solution
+
+```javascript
+const lengthOfLastWord = function(s) {  
+    const words = s.trim().replace(/\s+/g, " ").split(" ");
+    return words[words.length-1].length;
+};
+```
+
